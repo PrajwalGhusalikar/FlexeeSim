@@ -88,7 +88,7 @@ const Footer = () => {
         </ul>
       </div>
       <div className="text-gray-600 mt-4">
-        © flex simulation 2024 all rights reserved.
+        © flexee simulation 2024 all rights reserved.
       </div>
     </footer>
   );

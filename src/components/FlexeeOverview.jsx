@@ -18,15 +18,15 @@ const FlexeeOverview = () => {
         <div className="flex space-x-2 items-end">
           <div className="">
             <h1 className="text-4xl font-bold text-start mb-8">
-              FLEX OVERVIEW
+              FLEXEE OVERVIEW
             </h1>
-            <p className="text-lg text-gray-600 text-start mb-12">
-              <span className="text-red-500 font-semibold">FLEX </span> is a
+            <p className="text-lg text-gray-600 text-start mr-12  mb-12">
+              <span className="text-red-500 font-semibold">FLEXEE </span> is a
               comprehensive supply chain management simulation that encompasses
               all major elements of the supply chain, including suppliers,
               manufacturers, distributors, retailers, and end-users. Firms
-              participating in FLEX are responsible for managing a wide range of
-              activities, including:
+              participating in FLEXEE are responsible for managing a wide range
+              of activities, including:
             </p>
             <p className="text-lg bg-red-600 text-start py-1 w-40"></p>
           </div>

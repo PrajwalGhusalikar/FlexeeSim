@@ -5,7 +5,7 @@ function Home() {
     <div className="bg-white p-8">
       <div className="flex justify-between items-center">
         <div className="flex items-center">
-          <h1 className="text-xl font-bold text-red-500">FLEX</h1>
+          <h1 className="text-xl font-bold text-red-500 pr-1">FLEXEE</h1>
           <h1 className="text-xl font-bold">SIMULATION</h1>
           <div className="ml-4">
            <img src={logo} alt="" className="h-12" />
@@ -28,7 +28,7 @@ function Home() {
       </div>
       <div className="mt-16">
         <h2 className="text-2xl font-bold text-gray-700">
-          FLEX SIMULATION is designed to provide
+          FLEXEE SIMULATION is designed to provide
         </h2>
         <h2 className="text-2xl font-bold text-red-500">
           COMPREHENSIVE LEARNING EXPERIENCE
