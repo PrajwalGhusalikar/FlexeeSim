@@ -10,23 +10,34 @@ import Home from "./components/Home";
 import Testimonials from "./components/Testimonials";
 import Values from "./components/Values";
 import Navbar from "./components/Navbar";
+import Dashboard from "./components/Dashboard";
+import ExploreSim from "./components/ExploreSim";
+import CourseComponent from "./components/CourseComponent";
+import GroupsTeamsComponent from "./components/GroupsTeamsComponent";
+import StudentRequest from "./components/StudentRequest";
+import DashboardNavbar from "./components/DashboardNavbar";
+import Register from "./components/Register";
+import BackOfficeUser from "./components/Backoffice/BackOfficeUser";
+import BackOfficeConnecting from "./components/Backoffice/BackOfficeConnecting";
+import BackOfficeNavbar from "./components/Backoffice/BackOfficeNavbar";
 
 function App() {
   return (
     <div className="App">
       <Router>
-        <Navbar />
         <Routes>
           <Route
             exact
             path="/"
             element={
               <div className="pt-20">
+                <Navbar />
                 <Home />
                 <FlexeeOverview />
                 <Testimonials />
                 <Values />
                 <DecisionPreview />
+                <Footer />
               </div>
             }
           />
@@ -35,7 +46,9 @@ function App() {
             path="/aboutus"
             element={
               <div className="pt-20">
+                <Navbar />
                 <AboutUs />
+                <Footer />
               </div>
             }
           />
@@ -44,8 +57,8 @@ function App() {
             path="/features"
             element={
               <div className="pt-20">
-                {" "}
-                <Features />
+                <Navbar /> <Features />
+                <Footer />
               </div>
             }
           />
@@ -54,12 +67,69 @@ function App() {
             path="/preview"
             element={
               <div className="pt-20">
+                <Navbar />
                 <DecisionPreview />
+                <Footer />
+              </div>
+            }
+          />
+          <Route
+            exact
+            path="/dashboard"
+            element={
+              <div className="mt-48">
+                <DashboardNavbar />
+                <Dashboard />
+                <ExploreSim />
+
+                <StudentRequest />
+                <Footer />
+              </div>
+            }
+          />
+          <Route
+            exact
+            path="/backoffice"
+            element={
+              <div className="">
+                
+                <BackOfficeConnecting />
+              </div>
+            }
+          />
+          <Route
+            exact
+            path="/backoffice/user"
+            element={
+              <div className="">
+                <BackOfficeNavbar/>
+                <BackOfficeUser />
+              </div>
+            }
+          />
+          <Route
+            exact
+            path="/dashboard/courses"
+            element={
+              <div className="mt-48">
+                <DashboardNavbar />
+                <CourseComponent />
+                <GroupsTeamsComponent />
+                <StudentRequest />
+                <Footer />
+              </div>
+            }
+          />
+          <Route
+            exact
+            path="/register"
+            element={
+              <div className="">
+                <Register />
               </div>
             }
           />
         </Routes>
-        <Footer />
       </Router>
     </div>
   );
