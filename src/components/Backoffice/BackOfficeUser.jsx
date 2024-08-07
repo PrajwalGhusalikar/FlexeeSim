@@ -72,20 +72,8 @@ const BackOfficeUser = () => {
   ]);
 
   return (
-    <div className="grid grid-cols-6 pt-16 min-h-screen">
-      <div className=" col-span-1">
-        <BackOfficeSidebar />
-      </div>
-      <div className=" col-span-5 bg-gray-100 p-4">
-        <h2 className="text-xl text-start font-bold mb-4">
-          <span className="w-60 bg-slate-200 pr-5 mr-3 p-1">
-            SELECT A POOL{" "}
-          </span>
-          <span className="font-normal">
-            15745 - Wright State University - Vikram Sethi - MBA 7800 - B90
-            (6375) - Open
-          </span>
-        </h2>
+    <div className=" bg-gray-100 m-0 px-10 ">
+      <div className=" w-full">
         <h3 className="text-2xl px-2 text-start font-semibold mb-4">USERS</h3>
         <table className="w-full text-left border-collapse">
           <thead>
@@ -101,7 +89,7 @@ const BackOfficeUser = () => {
               <tr key={user.id} className="hover:bg-gray-200">
                 <td className="py-2 px-4 border-b">
                   <div className="flex items-center">
-                    <FontAwesomeIcon icon={faCircleUser} className="mr-2" />
+                    <FontAwesomeIcon icon={faCircleUser} className="mr-2 text-3xl text-gray-500" />
                     <div>
                       <span className="font-semibold">{user.name}</span>
                       <br />
@@ -123,7 +111,7 @@ const BackOfficeUser = () => {
                   <span className="text-gray-500">{user.team}</span>
                 </td>
                 <td className="py-2 px-4 border-b">
-                  <i className="fa-solid fa-check ml-2"></i>
+                  <i className="fa-solid fa-arrow-up-right-from-square"></i>
                 </td>
               </tr>
             ))}
@@ -140,11 +128,9 @@ const BackOfficeUser = () => {
             <FontAwesomeIcon icon={faCirclePlus} className="mr-2" /> LOAD MORE
           </button>
         </div>
-
-        <div className="text-xs text-gray-400 mt-8 text-center">
-          Copyright 2024 FLEX SOLUTION, All Rights Reserved
-        </div>
       </div>
+
+      
     </div>
   );
 };

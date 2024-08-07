@@ -20,6 +20,11 @@ import Register from "./components/Register";
 import BackOfficeUser from "./components/Backoffice/BackOfficeUser";
 import BackOfficeConnecting from "./components/Backoffice/BackOfficeConnecting";
 import BackOfficeNavbar from "./components/Backoffice/BackOfficeNavbar";
+import BackOfficeSidebar from "./components/Backoffice/BackOfficeSidebar";
+import BackOfficeFooter from "./components/Backoffice/BackOfficeFooter";
+import BackOfficeRankings from "./components/Backoffice/BackOfficeRankings";
+import BackOfficeReports from "./components/Backoffice/BackOfficeReports";
+import BackOfficeFAQS from "./components/Backoffice/BackOfficeFAQS";
 
 function App() {
   return (
@@ -92,7 +97,6 @@ function App() {
             path="/backoffice"
             element={
               <div className="">
-                
                 <BackOfficeConnecting />
               </div>
             }
@@ -102,8 +106,54 @@ function App() {
             path="/backoffice/user"
             element={
               <div className="">
-                <BackOfficeNavbar/>
-                <BackOfficeUser />
+                <BackOfficeNavbar />
+                <BackOfficeSidebar />
+                <div className="mt-28 ml-60">
+                  <BackOfficeUser />
+                </div>
+                <BackOfficeFooter/>
+              </div>
+            }
+          />
+          <Route
+            exact
+            path="/backoffice/rankings"
+            element={
+              <div className="">
+                <BackOfficeNavbar />
+                <BackOfficeSidebar />
+                <div className="mt-28 ml-60">
+                  <BackOfficeRankings />
+                </div>
+                <BackOfficeFooter/>
+              </div>
+            }
+          />
+          <Route
+            exact
+            path="/backoffice/reports"
+            element={
+              <div className="">
+                <BackOfficeNavbar />
+                <BackOfficeSidebar />
+                <div className="mt-28 ml-60">
+                  <BackOfficeReports />
+                </div>
+                <BackOfficeFooter/>
+              </div>
+            }
+          />
+          <Route
+            exact
+            path="/backoffice/faqs"
+            element={
+              <div className="">
+                <BackOfficeNavbar />
+                <BackOfficeSidebar />
+                <div className="mt-28 ml-60">
+                  <BackOfficeFAQS />
+                </div>
+                <BackOfficeFooter/>
               </div>
             }
           />

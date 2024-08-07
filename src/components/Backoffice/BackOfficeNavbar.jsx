@@ -2,23 +2,45 @@ import React from "react";
 
 const BackOfficeNavbar = () => {
   return (
-    <div className="w-full fixed z-40 bg-emerald-400 top-0 left-0 right-0">
-      <div className="flex justify-between items-center mb-4">
-        <div className="flex">
-          {" "}
-          <h1 className="text-xl font-bold">FLEXEE</h1>
-          <div>
-          <i className="fa-solid fa-bars"></i>
+    <div className="">
+      <div className="w-full fixed z-40  top-0 left-0  ">
+        <div className="flex justify-between items-center  bg-gray-900 text-white p-0">
+          <div className="w-60 left-0">
+            <h1 className="text-2xl p-2 bg-[#383838] font-bold">FLEXEE</h1>
+          </div>
+          <div className="flex items-center ">
+            <i className="fa-solid fa-grip mr-2 px-3 text-2xl"></i>
+            <i className="fa-solid fa-bell mr-2 px-3 text-2xl"></i>
+            <p className="px-3 text-2xl">|</p>
+            <a href="#" className="hover:text-gray-500">
+              Back To My Account
+            </a>
+            <i className="fa-solid fa-circle-user mr-2 px-3 text-3xl"></i>
+          </div>
         </div>
-        </div>
-        
-        <div className="flex items-center">
-          <i className="fa-solid fa-grid-layout mr-2"></i>
-          <i className="fa-solid fa-circle-user mr-2"></i>
-          <a href="#" className="hover:text-gray-500">
-            Back To My Account
-          </a>
-          <i className="fa-solid fa-caret-down ml-2"></i>
+        <div className="">
+          <div className="flex h-10">
+            {/* There is not proper alignments  */}
+            <div className=" w-1/4 h-10 "></div>
+            <div className=" w-full text-start  ">
+              <div className="text-xl flex text-start font-bold w-full py-1 bg-white  ">
+                <h1 className="w-60 bg-slate-200 pr-3 mr-1 pl-2 p-1">
+                  SELECT A POOL{" "}
+                </h1>
+                <select
+                  name=""
+                  id=""
+                  className="px-3 w-full p-1 border-0 border-b-2 border-l-2 font-normal "
+                >
+                  <option value="">
+                    {" "}
+                    15745 - Wright State University - Vikram Sethi - MBA 7800 -
+                    B90 (6375) - Open
+                  </option>
+                </select>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
