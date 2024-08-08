@@ -1,5 +1,6 @@
 import React from "react";
 import grid_img from "../Assets/Navbar-grid-img.png";
+import logout_img from "../Assets/logout.png";
 import { useLocation, useNavigate } from "react-router-dom";
 const DashboardNavbar = () => {
   const location = useLocation();
@@ -15,7 +16,7 @@ const DashboardNavbar = () => {
         </div>
         <div className="w-full">
           <div className="flex w-full justify-end items-center">
-            <div className="relative">
+            <div className="relative cursor-pointer">
               <i className="fa-solid fa-bell text-gray-500 text-xl"></i>
               <span className="absolute top-0 right-0 inline-block w-2 h-2 bg-red-600 rounded-full"></span>
             </div>
@@ -23,15 +24,16 @@ const DashboardNavbar = () => {
               {" "}
               <span className="ml-2">Welcome Vikram</span>
             </div>
-            <div className="ml-4 flex items-center text-gray-500">
+            <div className="ml-4 flex items-center text-gray-500 cursor-pointer">
               <i className="fa-solid fa-user-circle text-red-600"></i>
               <span className="ml-2">My Profile</span>
             </div>
-            <div className="ml-4">
+            <div className="ml-4 cursor-pointer">
               <i className="fa-solid fa-bars text-red-500 text-xl"></i>
             </div>
-            <div className="ml-4 border border-b-red-300 h-24 w-24 bg-slate-200 flex items-center justify-center">
-              <i className="fa-solid fa-sign-out-alt text-red-600 text-4xl"></i>
+            <div className="ml-4 border cursor-pointer border-b-red-300 h-24 w-24 bg-slate-200 flex items-center justify-center">
+              {/* <i className="fa-solid fa-sign-out-alt text-red-600 text-4xl"></i> */}
+              <img src={logout_img} className="h-14 w-14" alt="" />
             </div>
           </div>{" "}
           <div className="ml-4 bg-slate-200 p-3 flex justify-between items-center text-gray-500">

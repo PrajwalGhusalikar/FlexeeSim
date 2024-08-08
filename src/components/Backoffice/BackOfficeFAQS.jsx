@@ -39,9 +39,9 @@ const BackOfficeFAQS = () => {
   };
 
   return (
-    <div>
+    <div className="bg-gray-100 m-0 px-10">
       <div className="w-full">
-        <h3 className="text-2xl px-2 text-start font-semibold mb-4">
+        <h3 className="text-2xl px-2 text-start font-semibold mb-4  border-0 border-b pb-3 border-b-gray-500 border-opacity-20">
           FREQUENTLY ASKED QUESTIONS
         </h3>
       </div>
@@ -52,7 +52,11 @@ const BackOfficeFAQS = () => {
               className="flex items-center justify-between py-4 cursor-pointer"
               onClick={() => handleToggle(index)}
             >
-              <p className={`font-medium ${activeIndex === index ? "text-red-600" : "text-gray-800"}`}>
+              <p
+                className={`font-medium ${
+                  activeIndex === index ? "text-red-600" : "text-gray-800"
+                }`}
+              >
                 {faq.question}
               </p>
               <FontAwesomeIcon

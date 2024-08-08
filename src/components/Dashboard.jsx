@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import DashboardNavbar from "./DashboardNavbar";
 import { useNavigate } from "react-router-dom";
 
 const Dashboard = () => {
@@ -47,12 +46,12 @@ const Dashboard = () => {
       <div className="absolute left-1/2 transform top-16 h-[580px] w-[3px] bg-red-500"></div>
       <div className="absolute left-1/3 transform -translate-x-1/3 top-16 w-1/4 h-[2px] bg-red-500"></div>
 
-      <section className="grid grid-cols-2  items-center relative gap-10">
+      <section className="grid grid-cols-2 items-center relative gap-10">
         <div className="text-start">
           <h2 className="text-2xl font-bold mb-4">THE FRESH CONNECTION</h2>
           <h3 className="text-lg mb-4">4 ACTIVE COURSES</h3>
         </div>
-        <div className="bg-white p-2 mx-2 rounded shadow-md">
+        <div className="p-2 rounded">
           <h2 className="text-2xl font-bold mb-4 text-start">CODE ENTRY</h2>
           <form onSubmit={handleSubmit} className="flex space-x-4">
             <input
@@ -67,7 +66,6 @@ const Dashboard = () => {
             </button>
           </form>
         </div>
-        {/* <div className="absolute left-1/2 transform -translate-x-1/2 top-16 h-0.5 w-8 bg-red-500"></div> */}
       </section>
 
       <section className="w-full my-10">
@@ -76,9 +74,9 @@ const Dashboard = () => {
             <div
               key={index}
               onClick={() => handleSelectedCourse(course)}
-              className={`bg-gray-100 cursor-pointer text-start p-4 px-8 rounded shadow-md`}
+              className="bg-gray-100 cursor-pointer text-start p-4 px-8 rounded relative shadow-md group"
             >
-              <div className="">
+              <div>
                 <div className="text-lg font-semibold">ORGANIZATION:</div>
                 <div className="text-gray-700 mb-2">{course.organization}</div>
                 <div className="text-lg font-semibold">COURSE:</div>
@@ -88,8 +86,14 @@ const Dashboard = () => {
                   TOTAL NUMBER OF STUDENTS - {course.members}
                 </div>
               </div>
-              <div className="text-red-500 text-right">
-                Explore Team/Members
+              <div className="text-red-500 flex items-start space-x-2 text-right absolute top-5 right-5 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <span>
+                  <i className="fa-regular fa-circle-dot px-1"></i>Explore Team/Members{" "}
+                </span>
+                <span className="text-4xl">
+                  {" "}
+                  <i className="fa-solid fa-arrow-up-right-from-square py-4"></i>
+                </span>
               </div>
             </div>
           ))}

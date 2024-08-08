@@ -4,11 +4,11 @@ const BackOfficeReports = () => {
   return (
     <div className=" bg-gray-100 m-0 px-10 ">
       <div className=" w-full">
-        <h3 className="text-2xl px-2 text-start font-semibold mb-4">
+        <h3 className="text-2xl px-2 text-start font-semibold mb-4 border-0 border-b pb-3 border-b-gray-500 border-opacity-20">
           TRAINER FEEDBACK
         </h3>
       </div>
-      <div className="bg-white p-8 rounded-lg shadow-md">
+      <div className="bg-white p-6 rounded-lg shadow-md">
         <div className="flex justify-start space-x-3 items-center mb-4">
           <p className="text-gray-600 ">SELECT A ROUND TO LOAD FEEDBACK</p>
           <div className="flex gap-2">
@@ -60,9 +60,9 @@ const BackOfficeReports = () => {
           </ul>
         </div>
         <div className="flex items-center mt-4">
-          <div className="rounded-full border-2 border-gray-400 w-6 h-6 flex justify-center items-center"></div>
-          <div className="w-full h-1 bg-gray-300 mx-2"></div>
-          <div className="rounded-full border-2 border-gray-400 w-6 h-6 flex justify-center items-center"></div>
+          <div className="rounded-full border-2 border-red-400 w-3 h-3 flex justify-center items-center"></div>
+          <div className="w-60 h-0.5 bg-gray-300 ml-3"></div>
+          <i class="fa-solid fa-arrow-right text-gray-300 text-lg"></i>
         </div>
         <div className="flex gap-4 my-4 ">
           <p className="text-sm font-semibold text-gray-500">STRATEGY</p>

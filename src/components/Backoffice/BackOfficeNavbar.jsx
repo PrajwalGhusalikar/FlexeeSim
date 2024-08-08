@@ -21,23 +21,30 @@ const BackOfficeNavbar = () => {
         <div className="">
           <div className="flex h-10">
             {/* There is not proper alignments  */}
-            <div className=" w-1/4 h-10 "></div>
+            <div className=" w-60 h-10 "></div>
             <div className=" w-full text-start  ">
               <div className="text-xl flex text-start font-bold w-full py-1 bg-white  ">
-                <h1 className="w-60 bg-slate-200 pr-3 mr-1 pl-2 p-1">
+                <h1 className="w-72 text-right font-medium bg-slate-200 pr-10 mr-1 pl-0 p-1">
                   SELECT A POOL{" "}
                 </h1>
-                <select
-                  name=""
-                  id=""
-                  className="px-3 w-full p-1 border-0 border-b-2 border-l-2 font-normal "
-                >
-                  <option value="">
-                    {" "}
-                    15745 - Wright State University - Vikram Sethi - MBA 7800 -
-                    B90 (6375) - Open
-                  </option>
-                </select>
+                <div className="relative w-full">
+                  <select
+                    name=""
+                    id=""
+                    className="px-3 w-full p-1 border-0 border-b-2 border-l-2 font-normal appearance-none pl-10"
+                  >
+                    <option value="">
+                      {" "}
+                      15745 - Wright State University - Vikram Sethi - MBA 7800
+                      - B90 (6375) - Open
+                    </option>
+                  </select>
+                  <div className="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
+                    <div className="bg-gray-200  border-4 p-1 border-l-red-500 w-14 flex justify-center items-center h-8 absolute right-0 top-0">
+                      <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

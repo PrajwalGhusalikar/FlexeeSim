@@ -53,28 +53,15 @@ const BackOfficeUser = () => {
       email: "email@xyz.com",
       opinion: "Operations, Sales",
       team: "75499-TFC-MBA 7800 B90-June 2022-Team 1",
-    },
-    {
-      name: "Natieya Still",
-      id: "#54639841",
-      email: "email@xyz.com",
-      opinion: "Operations, Sales",
-      team: "75499-TFC-MBA 7800 B90-June 2022-Team 1",
-    },
-    {
-      name: "Amber Rox",
-      id: "#54639841",
-      email: "email@xyz.com",
-      opinion: "Operations, Sales",
-      team: "75499-TFC-MBA 7800 B90-June 2022-Team 1",
-    },
-    // Add more users here
+    }
   ]);
 
   return (
     <div className=" bg-gray-100 m-0 px-10 ">
       <div className=" w-full">
-        <h3 className="text-2xl px-2 text-start font-semibold mb-4">USERS</h3>
+        <h3 className="text-2xl px-2 text-start font-semibold mb-2 border-0 border-b pb-3 border-b-gray-500 border-opacity-20">
+          USERS
+        </h3>
         <table className="w-full text-left border-collapse">
           <thead>
             <tr>
@@ -89,7 +76,10 @@ const BackOfficeUser = () => {
               <tr key={user.id} className="hover:bg-gray-200">
                 <td className="py-2 px-4 border-b">
                   <div className="flex items-center">
-                    <FontAwesomeIcon icon={faCircleUser} className="mr-2 text-3xl text-gray-500" />
+                    <FontAwesomeIcon
+                      icon={faCircleUser}
+                      className="mr-2 text-3xl text-gray-500"
+                    />
                     <div>
                       <span className="font-semibold">{user.name}</span>
                       <br />
@@ -129,8 +119,6 @@ const BackOfficeUser = () => {
           </button>
         </div>
       </div>
-
-      
     </div>
   );
 };

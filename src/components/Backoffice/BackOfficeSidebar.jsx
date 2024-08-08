@@ -23,7 +23,7 @@ const BackOfficeSidebar = () => {
               className={`hover:text-gray-500 ${
                 location.pathname === "/backoffice/user"
                   ? "text-red-500"
-                  : "text-blue-500"
+                  : "text-gray-100"
               }`}
             >
               View Users
@@ -33,7 +33,7 @@ const BackOfficeSidebar = () => {
             <Link
               to="/backoffice/user"
               className={`hover:text-gray-500 ${
-                location.pathname === "/" ? "text-red-500" : "text-blue-500"
+                location.pathname === "/" ? "text-red-500" : "text-gray-100"
               }`}
             >
               Calculate
@@ -45,7 +45,7 @@ const BackOfficeSidebar = () => {
               className={`hover:text-gray-500 ${
                 location.pathname === "/backoffice/rankings"
                   ? "text-red-500"
-                  : "text-blue-500"
+                  : "text-gray-100"
               }`}
             >
               Ranking
@@ -62,7 +62,7 @@ const BackOfficeSidebar = () => {
                 <Link
                   to="/"
                   className={`hover:text-gray-500 ${
-                    location.pathname === "/" ? "text-red-500" : "text-blue-500"
+                    location.pathname === "/" ? "text-red-500" : "text-gray-100"
                   }`}
                 >
                   Trainer/Teacher Feedback
@@ -74,7 +74,7 @@ const BackOfficeSidebar = () => {
                   className={`hover:text-gray-500 ${
                     location.pathname === "/backoffice/reports"
                       ? "text-red-500"
-                      : "text-blue-500"
+                      : "text-gray-100"
                   }`}
                 >
                   Onsite Reporting
@@ -84,7 +84,7 @@ const BackOfficeSidebar = () => {
                 <Link
                   to="/"
                   className={`hover:text-gray-500 ${
-                    location.pathname === "/" ? "text-red-500" : "text-blue-500"
+                    location.pathname === "/" ? "text-red-500" : "text-gray-100"
                   }`}
                 >
                   KPI Reports
@@ -102,7 +102,7 @@ const BackOfficeSidebar = () => {
                 <Link
                   to="/"
                   className={`hover:text-gray-500 ${
-                    location.pathname === "/" ? "text-red-500" : "text-blue-500"
+                    location.pathname === "/" ? "text-red-500" : "text-gray-100"
                   }`}
                 >
                   Teamrole Answers
@@ -112,7 +112,7 @@ const BackOfficeSidebar = () => {
                 <Link
                   to="/"
                   className={`hover:text-gray-500 ${
-                    location.pathname === "/" ? "text-red-500" : "text-blue-500"
+                    location.pathname === "/" ? "text-red-500" : "text-gray-100"
                   }`}
                 >
                   Metaprogram Answers
@@ -133,7 +133,7 @@ const BackOfficeSidebar = () => {
                   className={`hover:text-gray-500 ${
                     location.pathname === "/backoffice/faqs"
                       ? "text-red-500"
-                      : "text-blue-500"
+                      : "text-gray-100"
                   }`}
                 >
                   FAQs
@@ -143,7 +143,7 @@ const BackOfficeSidebar = () => {
                 <Link
                   to="/"
                   className={`hover:text-gray-500 ${
-                    location.pathname === "/" ? "text-red-500" : "text-blue-500"
+                    location.pathname === "/" ? "text-red-500" : "text-gray-100"
                   }`}
                 >
                   Manage Pool
