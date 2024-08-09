@@ -8,60 +8,66 @@ const TeamTableComponent = () => {
       id: "23354824",
       amount: "$968",
       validity: "1 Year",
-      image: backgroundImage2,
+      image: "https://randomuser.me/api/portraits/women/1.jpg",
     },
     {
       name: "Catherine",
       id: "23354824",
       amount: "$968",
       validity: "1 Year",
-      image: backgroundImage2,
+      image: "https://randomuser.me/api/portraits/women/2.jpg",
     },
     {
       name: "Amelia",
       id: "23354824",
       amount: "$968",
       validity: "1 Year",
-      image: backgroundImage2,
+      image: "https://randomuser.me/api/portraits/women/3.jpg",
     },
     {
       name: "Elizabeth",
       id: "23354824",
       amount: "$968",
       validity: "1 Year",
-      image: backgroundImage2,
+      image: "https://randomuser.me/api/portraits/women/4.jpg",
     },
     {
       name: "Charlotte",
       id: "23354824",
       amount: "$968",
       validity: "1 Year",
-      image: backgroundImage2,
+      image: "https://randomuser.me/api/portraits/women/5.jpg",
     },
   ];
 
   return (
-    <div className="bg-white p-6 pt-0 w-full mx-auto">
-      <div className="bg-gray-50 p-4 rounded-lg shadow-lg">
-        <div className="flex justify-between items-center mb-4">
-          <div className="text-xl font-bold">TEAM 01</div>
-          <div className="text-gray-500 flex items-center">
-            <i className="fa-solid fa-calendar-alt text-red-500 mr-2"></i>
-            CREATED ON: 05/23/2024
+    <div className="bg-white p-0 pt-0 w-full mx-auto">
+      <div className="bg-gray-50 p-0 rounded-lg  pt-8">
+        <div className="flex w-full justify-between px-4">
+          <div className="flex flex-col justify-between items-start mb-4">
+            <div className="text-2xl font-bold">TEAM 01</div>
+            <div className="text-gray-500 flex items-center">
+              <i className="fa-solid fa-calendar-alt text-red-500 mr-2"></i>
+              CREATED ON: 05/23/2024
+            </div>
           </div>
-        </div>
-        <div className="flex justify-between items-center mb-4">
-          <div className="text-gray-500 flex items-center">
-            <i className="fa-solid fa-arrow-left text-red-500 mr-2"></i>
-            <i className="fa-solid fa-arrow-right text-red-500"></i>
-          </div>
-          <div className="flex items-center">
-            <div className="bg-yellow-500 h-4 w-4 rounded-full mr-2"></div>
-            <div className="text-sm">Email Sent</div>
-            <div className="bg-blue-500 h-4 w-4 rounded-full ml-4 mr-2"></div>
-            <div className="text-sm">Read</div>
-            <div className="bg-red-500 h-4 w-4 rounded-full ml-4 mr-2"></div>
-            <div className="text-sm">Unread</div>
+          <div className="flex justify-between items-center mb-4">
+            <div className="flex flex-col items-start ">
+              <div className="flex space-x-2 items-center">
+                <div className="bg-yellow-500 h-4 w-4 rounded-full "></div>
+                <div className="text-sm">Email Sent</div>
+              </div>
+              <div className="flex space-x-2 items-center">
+                {" "}
+                <div className="bg-blue-500 h-4 w-4 rounded-full "></div>
+                <div className="text-sm">Read</div>
+              </div>
+              <div className="flex space-x-2 items-center">
+                {" "}
+                <div className="bg-red-500 h-4 w-4 rounded-full "></div>
+                <div className="text-sm">Unread</div>
+              </div>
+            </div>
           </div>
         </div>
         <div className="h-96 overflow-y-scroll">
@@ -93,8 +99,8 @@ const TeamTableComponent = () => {
                     <i className="fa-solid fa-check-circle"></i>
                   </td>
                   <td className="py-4 px-4 text-gray-500">{member.validity}</td>
-                  <td className="py-4 px-4 flex items-center justify-center">
-                    <i className="fa-solid fa-chevron-right text-blue-500"></i>
+                  <td className="py-4 px-4  text-xl text-blue-400 hover:text-blue-500 cursor-pointer">
+                    <i class="fa-solid fa-circle-chevron-right"></i>
                   </td>
                 </tr>
               ))}

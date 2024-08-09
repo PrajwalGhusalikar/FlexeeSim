@@ -93,9 +93,11 @@ const StudentRequest = () => {
     });
 
   return (
-    <div className="container mx-auto px-4 py-6">
-      <h2 className="text-2xl font-bold mb-4">STUDENTS / MEMBER REQUEST</h2>
-      <div className="flex items-center mb-4">
+    <div className=" mx-16  px-6 py-6  border-2  border-t-2 rounded-md   border-gray-400 border-opacity-50">
+      <h2 className="text-4xl text-gray-600 border-0 border-b-2 pb-8 border-opacity-30 border-b-gray-500  font-medium text-start mb-4">
+        STUDENTS / MEMBER REQUEST
+      </h2>
+      <div className="flex items-center mb-4 p-5">
         <div className="flex items-center mr-4">
           <input
             type="checkbox"
@@ -105,9 +107,12 @@ const StudentRequest = () => {
             onChange={handleFilterChange}
             className="mr-2"
           />
-          <label htmlFor="allStudents" className="text-gray-700">
-            All Students
-            <span className="text-xs text-green-500 ml-1">TOTAL 1065</span>
+          <label
+            htmlFor="allStudents"
+            className="text-gray-700  flex flex-col items-start space-y-1"
+          >
+            <p> All Students</p>
+            <p className="text-xs text-green-500 ml-1">TOTAL 1065</p>
           </label>
         </div>
         <div className="flex items-center mr-4">
@@ -119,11 +124,12 @@ const StudentRequest = () => {
             onChange={handleFilterChange}
             className="mr-2"
           />
-          <label htmlFor="studentsTeam" className="text-gray-700">
-            Students
-            <span className="text-xs text-gray-500 ml-1">
-              TEAM / GROUP ASSIGN
-            </span>
+          <label
+            htmlFor="studentsTeam"
+            className="text-gray-700  flex flex-col items-start space-y-1"
+          >
+            <p>Students</p>
+            <p className="text-xs text-gray-500 ml-1">TEAM / GROUP ASSIGN</p>
           </label>
         </div>
         <div className="flex items-center">
@@ -135,11 +141,14 @@ const StudentRequest = () => {
             onChange={handleFilterChange}
             className="mr-2"
           />
-          <label htmlFor="studentsNotTeam" className="text-gray-700">
-            Students
-            <span className="text-xs text-gray-500 ml-1">
+          <label
+            htmlFor="studentsNotTeam"
+            className="text-gray-700 flex flex-col items-start space-y-1"
+          >
+            <p>Students</p>
+            <p className="text-xs text-gray-500 ml-1">
               TEAM / GROUP NOT ASSIGN
-            </span>
+            </p>
           </label>
         </div>
         <div className="ml-auto">
@@ -148,9 +157,9 @@ const StudentRequest = () => {
             placeholder="Search Student"
             value={searchTerm}
             onChange={handleSearchChange}
-            className="px-3 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="px-3 py-2 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
-          <button className="ml-2 px-3 py-2 rounded-md bg-blue-500 text-white hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500">
+          <button className="ml-2 px-3 py-2 rounded-full text-red-500  hover:scale-110 focus:outline-none focus:ring-2 focus:ring-red-500">
             <i className="fa-solid fa-magnifying-glass"></i>
           </button>
         </div>
@@ -190,10 +199,8 @@ const StudentRequest = () => {
               </td>
               <td className="px-4 py-2">
                 <div className="relative">
-                  <select className="block w-full text-gray-700 py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-primary focus:border-primary sm:text-sm">
-                    <option value="" disabled>
-                      Assign Team
-                    </option>
+                  <select className="block  text-gray-700 py-2 px-3 border border-red-300 bg-white rounded-full w-52 text-center shadow-sm focus:outline-none focus:ring-primary focus:border-primary sm:text-sm">
+                    <option value="">Assign Team</option>
                     <option value="team1">TEAM 01</option>
                     <option value="team2">TEAM 02</option>
                     <option value="team3">TEAM 03</option>
@@ -204,7 +211,9 @@ const StudentRequest = () => {
               <td className="px-4 py-2 text-start text-green-500">
                 {student.status}
               </td>
-              <td className="px-4 py-2 text-start">{student.enrollDate}</td>
+              <td className="px-4 py-2 text-start w-32">
+                {student.enrollDate}
+              </td>
               <td className="px-4 py-2 text-start">
                 <i className="fa-solid fa-arrow-up-right-from-square"></i>
               </td>

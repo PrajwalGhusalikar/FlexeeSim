@@ -82,12 +82,10 @@ function App() {
             exact
             path="/dashboard"
             element={
-              <div className="mt-48">
+              <div className="mt-52">
                 <DashboardNavbar />
                 <Dashboard />
                 <ExploreSim />
-
-                <StudentRequest />
                 <Footer />
               </div>
             }
@@ -111,7 +109,7 @@ function App() {
                 <div className="mt-28 ml-60">
                   <BackOfficeUser />
                 </div>
-                <BackOfficeFooter/>
+                <BackOfficeFooter />
               </div>
             }
           />
@@ -125,7 +123,7 @@ function App() {
                 <div className="mt-28 ml-60">
                   <BackOfficeRankings />
                 </div>
-                <BackOfficeFooter/>
+                <BackOfficeFooter />
               </div>
             }
           />
@@ -139,7 +137,7 @@ function App() {
                 <div className="mt-28 ml-60">
                   <BackOfficeReports />
                 </div>
-                <BackOfficeFooter/>
+                <BackOfficeFooter />
               </div>
             }
           />
@@ -153,7 +151,7 @@ function App() {
                 <div className="mt-28 ml-60">
                   <BackOfficeFAQS />
                 </div>
-                <BackOfficeFooter/>
+                <BackOfficeFooter />
               </div>
             }
           />

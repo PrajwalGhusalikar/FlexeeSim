@@ -53,7 +53,7 @@ const BackOfficeUser = () => {
       email: "email@xyz.com",
       opinion: "Operations, Sales",
       team: "75499-TFC-MBA 7800 B90-June 2022-Team 1",
-    }
+    },
   ]);
 
   return (
@@ -108,14 +108,17 @@ const BackOfficeUser = () => {
           </tbody>
         </table>
         <div className="flex justify-between items-center mt-4">
-          <div className="">
-            <span className="text-gray-500">Showing 1 to 10 Out Of 1065</span>
-            <button className="px-4 py-2 text-red-500 rounded hover:bg-blue-600">
-              <FontAwesomeIcon icon={faDownload} className="mr-2" /> Download
+          <div className="flex items-center">
+            <p className="text-gray-800">Showing 1 to 10 Out Of 1065</p>
+            <button className=" flex items-center justify-between w-36 px-4 py-2 text-red-500 rounded ">
+              <p className=" flex justify-center items-center w-7 h-7 border-opacity-50 border border-black rounded-full">
+                <FontAwesomeIcon icon={faDownload} className="" />
+              </p>
+              <p>Download</p>
             </button>
           </div>
           <button className="w-40 text-sm px-4 py-2 bg-red-500 rounded-full text-white  mt-4 hover:bg-gray-700">
-            <FontAwesomeIcon icon={faCirclePlus} className="mr-2" /> LOAD MORE
+            <i class="fa-solid fa-arrows-rotate"></i> LOAD MORE
           </button>
         </div>
       </div>

@@ -59,9 +59,9 @@ const GroupsTeamsComponent = () => {
   ];
 
   return (
-    <div className="bg-white p-6  mx-auto">
-      <div className="grid grid-cols-2 justify-start items-start mb-6">
-        <div className="w-full border border-gray-300 p-2">
+    <div className="bg-white grid px-16 mx-auto">
+      <div className="grid grid-cols-5 justify-start items-start mb-6 ">
+        <div className="w-full h-full p-10 col-span-3 border-2  border-t-2 rounded-s-md   border-gray-400 border-opacity-50">
           <header className="flex justify-between items-center mb-4">
             <div className="text-2xl font-bold">GROUPS</div>
           </header>
@@ -70,8 +70,12 @@ const GroupsTeamsComponent = () => {
             <div className="h-32 bg-gray-300 w-96 flex items-center justify-center">
               <img src={graph} alt="" className="h-full w-full" />
             </div>
-            <button className="bg-red-500 h-10 text-white px-4 py-2 rounded-lg mb-6">
-              + CREATE NEW TEAM
+            <button className="bg-red-500 h-10 rounded-full flex space-x-1 justify-center items-center text-white px-4 py-2 ">
+              <p>
+                {" "}
+                <i class="fa-solid fa-plus font-semibold"></i>
+              </p>{" "}
+              <p className="text-lg">|</p> <p>CREATE NEW TEAM </p>
             </button>
           </div>
 
@@ -101,7 +105,7 @@ const GroupsTeamsComponent = () => {
             ))}
           </div>
         </div>
-        <div className="">
+        <div className=" col-span-2 border-0 border-t-2 border-b-2 border-r-2  rounded-e-md    border-gray-400 border-opacity-50 h-full">
           <TeamTableComponent />
         </div>
       </div>

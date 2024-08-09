@@ -7,8 +7,8 @@ const ExploreSim = () => {
       <div className="relative h-full">
         {/* Top Section */}
         <div className="text-center p-8 bg-white">
-          <h1 className="text-4xl font-bold">BACKOFFICE</h1>
-          <h2 className="text-xl font-semibold mt-2">
+          <h1 className="text-4xl font-semibold">BACKOFFICE</h1>
+          <h2 className="text-2xl font-normal mt-2">
             THE FRESH CONNECTION BACKOFFICE
           </h2>
           <p className="text-gray-700 mt-4">
@@ -16,31 +16,30 @@ const ExploreSim = () => {
             <br />
             You are also able to monitor the performance of your teams.
           </p>
-          <button className="mt-6 px-8 py-3 bg-red-500 text-white rounded-full">
+          <button className="mt-6 px-8 py-3 border-2 border-red-700 bg-red-500 text-white rounded-full">
             CONNECT NOW
           </button>
         </div>
 
         {/* Middle Section with Background Image */}
         <div
-          className="relative h-[500px] mx-20 bg-cover bg-center"
+          className="relative h-screen bg-cover bg-center"
           style={{ backgroundImage: `url(${backgroundImage})` }}
         >
-          {/* <div className="absolute bottom-0 right-0 w-1/2 p-8 bg-red-500 text-white">
-            <h3 className="text-2xl font-bold">THE FRESH CONNECTION</h3>
-            <h4 className="text-xl mt-2">ONLINE TRAIN THE TRAINER</h4>
-            <p className="mt-4">
-              welcome to the online train the trainer for the fresh connection.
-            </p>
-            <button className="mt-6 px-8 py-3 bg-white text-red-500 rounded-full">
-              TRAINER QUESTION
-            </button>
-          </div> */}
+          <button className="px-8 py-4 w-[340px] border-2 border-red-700 bg-white hover:bg-slate-200 text-gray-600 rounded-full flex items-center justify-between space-x-1 absolute bottom-[123px] right-[161px]">
+            <span>
+              <i class="fa-solid fa-circle-question text-2xl"></i>
+            </span>
+            <span className=" text-2xl">TRAINER QUESTION</span>
+          </button>
         </div>
 
         {/* Bottom Section */}
-        <div className="flex items-center justify-evenly bg-white p-8">
-          <button className="px-8 py-3 bg-red-500 text-white rounded-full flex items-center space-x-2">
+        <div className="flex items-center justify-evenly bg-white p-8 pt-0">
+          <button className="px-8 py-3 border-2 border-red-700 bg-red-500 text-white rounded-full flex items-center space-x-2">
+          <span>
+          <i class="fa-solid fa-cube"></i>
+            </span>
             <span>EXPLORE SIMULATION</span>
           </button>
           <div className="flex items-center space-x-4">
