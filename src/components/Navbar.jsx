@@ -21,6 +21,18 @@ const Navbar = () => {
             Home
           </Link>
           <Link
+            to="/dashboard"
+            className="text-gray-500 hover:text-red-500 hover:underline underline-offset-4 decoration-red-600 cursor-pointer"
+          >
+            Dashboard
+          </Link>
+          <Link
+            to="/backoffice"
+            className="text-gray-500 hover:text-red-500 hover:underline underline-offset-4 decoration-red-600 cursor-pointer"
+          >
+            Backoffice
+          </Link>
+          <Link
             to="/aboutus"
             className="text-gray-500 hover:text-red-500 hover:underline underline-offset-4 decoration-red-600 cursor-pointer"
           >
