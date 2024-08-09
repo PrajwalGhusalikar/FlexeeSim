@@ -1,16 +1,9 @@
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faBars,
-  faCircleUser,
-  faArrowLeft,
-  faDownload,
-  faCirclePlus,
-} from "@fortawesome/free-solid-svg-icons";
-import BackOfficeNavbar from "./BackOfficeNavbar";
-import BackOfficeSidebar from "./BackOfficeSidebar";
+import { faCircleUser, faDownload } from "@fortawesome/free-solid-svg-icons";
 
 const BackOfficeUser = () => {
+  // eslint-disable-next-line
   const [users, setUsers] = useState([
     {
       name: "Amber Rox",

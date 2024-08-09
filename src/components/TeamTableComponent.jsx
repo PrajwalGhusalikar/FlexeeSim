@@ -1,6 +1,4 @@
 import React from "react";
-import backgroundImage2 from "../Assets/ExploreSim.png";
-
 const TeamTableComponent = () => {
   const teamMembers = [
     {

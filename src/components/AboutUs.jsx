@@ -1,8 +1,5 @@
 import React from "react";
 import aboutus from "../Assets/about.png";
-import logo from "../Assets/Vector.png";
-import { Link } from "react-router-dom";
-import Navbar from "./Navbar";
 
 const AboutUs = () => {
   return (

@@ -1,5 +1,4 @@
 import React from "react";
-import Navbar from "./Navbar";
 import feature1 from "../Assets/Service.png";
 import feature2 from "../Assets/Demand.png";
 import feature3 from "../Assets/IT.png";
@@ -63,7 +62,7 @@ const Features = () => {
               <p className="text-gray-700 mb-4">{features[0].description}</p>
             </div>
             <div className="flex h-20 justify-between items-end">
-              <a href="#" className={`underline ${features[0].linkColor}`}>
+              <a href="/" className={`underline ${features[0].linkColor}`}>
                 Try now
               </a>
               <img
@@ -86,7 +85,7 @@ const Features = () => {
               <p className="text-gray-700 mb-4">{features[1].description}</p>
             </div>
             <div className="flex h-20 justify-between items-end">
-              <a href="#" className={`underline ${features[1].linkColor}`}>
+              <a href="/" className={`underline ${features[1].linkColor}`}>
                 Try now
               </a>
               <img
@@ -109,7 +108,7 @@ const Features = () => {
               <p className="text-gray-700 mb-4">{features[2].description}</p>
             </div>
             <div className="flex h-20  justify-between items-end">
-              <a href="#" className={`underline ${features[2].linkColor}`}>
+              <a href="/" className={`underline ${features[2].linkColor}`}>
                 Try now
               </a>
               <img
@@ -130,7 +129,7 @@ const Features = () => {
               <p className="text-gray-700 mb-4">{features[3].description}</p>
             </div>
             <div className="flex h-20  justify-between items-end">
-              <a href="#" className={`underline ${features[3].linkColor}`}>
+              <a href="/" className={`underline ${features[3].linkColor}`}>
                 Try now
               </a>
               <img

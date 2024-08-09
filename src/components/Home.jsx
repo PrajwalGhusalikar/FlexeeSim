@@ -1,7 +1,4 @@
-import React from "react";
-import logo from "../Assets/Vector.png";
-import { Link } from "react-router-dom";
-import Navbar from "./Navbar";
+import React from "react"
 function Home() {
   return (
     <div className="bg-white p-8">

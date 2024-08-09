@@ -29,7 +29,7 @@ const BackOfficeNavbar = () => {
             </svg>
             <i className="fa-solid fa-bell mr-2 px-3 text-2xl"></i>
             <p className="px-3 text-2xl">|</p>
-            <a href="#" className="hover:text-gray-500">
+            <a href="/" className="hover:text-gray-500">
               Back To My Account
             </a>
             <i className="fa-solid fa-circle-user mr-2 px-3 text-3xl"></i>

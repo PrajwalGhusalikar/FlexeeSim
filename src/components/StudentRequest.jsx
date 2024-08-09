@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 const StudentRequest = () => {
-  const [students, setStudents] = useState([
+  const students = useState([
     {
       id: 1,
       name: "Shruti Rathod",
