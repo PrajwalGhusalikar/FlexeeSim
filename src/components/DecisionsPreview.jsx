@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import forecast from "../Assets/ForecastImg.png";
 import service from "../Assets/SrviceDecision.png";
 import demand from "../Assets/DemandGeneration.png";
