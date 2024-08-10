@@ -45,9 +45,9 @@ const BackOfficeFAQS = () => {
           FREQUENTLY ASKED QUESTIONS
         </h3>
       </div>
-      <div className="container text-start mx-auto px-4 py-8">
+      <div className="container text-start mx-auto px-4 py-8 border-2 border-gray-500 rounded-md border-opacity-30">
         {faqData.map((faq, index) => (
-          <div key={index} className="border-b border-gray-300 mb-6">
+          <div key={index} className="border-b border-gray-300 mb-3 pb-3">
             <div
               className="flex items-center justify-between py-4 cursor-pointer"
               onClick={() => handleToggle(index)}

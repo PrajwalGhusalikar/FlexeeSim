@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 
 const StudentRequest = () => {
-  const students = useState([
+   // eslint-disable-next-line 
+  const [students, setStudents] = useState([
     {
       id: 1,
       name: "Shruti Rathod",
@@ -87,8 +88,8 @@ const StudentRequest = () => {
     })
     .filter((student) => {
       return (
-        student.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        student.studentId.toLowerCase().includes(searchTerm.toLowerCase())
+        student.name?.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        student.studentId?.toLowerCase().includes(searchTerm.toLowerCase())
       );
     });
 

@@ -65,7 +65,7 @@ const GroupsTeamsComponent = () => {
           <header className="flex justify-between items-center mb-4">
             <div className="text-2xl font-bold">GROUPS</div>
           </header>
-          <div className="bg-gray-100 flex w-full justify-between p-4 rounded mb-4">
+          <div className="bg-gray-50 flex w-full justify-between p-4 rounded mb-4">
             {/* Placeholder for the graph */}
             <div className="h-32 bg-gray-300 w-96 flex items-center justify-center">
               <img src={graph} alt="" className="h-full w-full" />
@@ -83,12 +83,14 @@ const GroupsTeamsComponent = () => {
             {teams.map((team, index) => (
               <div
                 key={index}
-                className="flex justify-between items-center border-b border-gray-200 py-2"
+                className="flex justify-between items-center border-b-2 border-gray-200 py-2 group hover:border-b-red-500 border-opacity-20"
               >
                 <div className="text-lg">{team.name}</div>
                 <div
                   className={`text-red-500 ${
-                    team.members.length === 0 ? "text-gray-500" : ""
+                    team.members.length === 0
+                      ? "text-gray-500 flex flex-col justify-start"
+                      : ""
                   }`}
                 >
                   Member{" "}
@@ -96,9 +98,13 @@ const GroupsTeamsComponent = () => {
                     ? `Joined ${team.members.length}`
                     : "Not Added Yet"}
                 </div>
-                {team.members.length > 0 && (
-                  <div className="text-red-500">
-                    <span>&rarr;</span>
+                {team.members.length > 0 ? (
+                  <div className="text-red-500 cursor-pointer opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <span><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+                  </div>
+                ) : (
+                  <div className="text-red-500 disabled cursor-pointer opacity-0 group-hover:opacity-100 transition-opacity duration-300 ">
+                    <span><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
                   </div>
                 )}
               </div>

@@ -5,34 +5,39 @@ const BackOfficeNavbar = () => {
     <div className="">
       <div className="w-full fixed z-40  top-0 left-0  ">
         <div className="flex justify-between items-center  bg-gray-900 text-white p-0">
-          <div className="w-60 left-0">
+          <div className="w-72 left-0">
             <h1 className="text-2xl p-2 bg-[#383838] font-bold">FLEXEE</h1>
           </div>
-          <div className="flex items-center ">
-            <svg
-              class="h-8 w-8 text-white "
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              stroke-width="1"
-              stroke="currentColor"
-              fill="none"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
-              {" "}
-              <path stroke="none" d="M0 0h24v24H0z" />{" "}
-              <rect x="4" y="4" width="6" height="6" rx="1" />{" "}
-              <rect x="14" y="4" width="6" height="6" rx="1" />{" "}
-              <rect x="4" y="14" width="6" height="6" rx="1" />{" "}
-              <rect x="14" y="14" width="6" height="6" rx="1" />
-            </svg>
-            <i className="fa-solid fa-bell mr-2 px-3 text-2xl"></i>
-            <p className="px-3 text-2xl">|</p>
-            <a href="/" className="hover:text-gray-500">
-              Back To My Account
-            </a>
-            <i className="fa-solid fa-circle-user mr-2 px-3 text-3xl"></i>
+          <div className="flex justify-between w-full">
+            <div className="px-3">
+              <i class="fa-solid fa-bars mr-2 px-3 text-2xl text-red-500"></i>
+            </div>
+            <div className="flex items-center ">
+              <svg
+                class="h-8 w-8 text-white "
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                stroke-width="1"
+                stroke="currentColor"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                {" "}
+                <path stroke="none" d="M0 0h24v24H0z" />{" "}
+                <rect x="4" y="4" width="6" height="6" rx="1" />{" "}
+                <rect x="14" y="4" width="6" height="6" rx="1" />{" "}
+                <rect x="4" y="14" width="6" height="6" rx="1" />{" "}
+                <rect x="14" y="14" width="6" height="6" rx="1" />
+              </svg>
+              <i className="fa-solid fa-bell mx-2 px-3 text-2xl"></i>
+              <p className="px-3 text-2xl">|</p>
+              <a href="/" className="hover:text-gray-500">
+                Back To My Account
+              </a>
+              <i className="fa-solid fa-circle-user mr-2 px-3 text-3xl"></i>
+            </div>
           </div>
         </div>
         <div className="">

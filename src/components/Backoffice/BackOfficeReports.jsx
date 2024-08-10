@@ -33,10 +33,10 @@ const BackOfficeReports = () => {
         <div className="flex gap-4 mb-4">
           <p className="text-sm font-semibold text-gray-500">STRATEGY</p>
           <p className="text-sm font-semibold text-gray-500">
-            <i className="fa-solid fa-circle"></i> SERVICE
+            <i className="fa-solid fa-circle text-xs text-red-500"></i> SERVICE
           </p>
           <p className="text-sm font-semibold text-gray-500">
-            <i className="fa-solid fa-circle"></i> OBSOLETES
+            <i className="fa-solid fa-circle text-xs text-red-500"></i> OBSOLETES
           </p>
         </div>
         <div className="flex flex-col justify-start items-start">
@@ -67,10 +67,10 @@ const BackOfficeReports = () => {
         <div className="flex gap-4 my-4 ">
           <p className="text-sm font-semibold text-gray-500">STRATEGY</p>
           <p className="text-sm font-semibold text-gray-500">
-            <i className="fa-solid fa-circle"></i> SERVICE
+            <i className="fa-solid fa-circle text-xs text-red-500"></i> SERVICE
           </p>
           <p className="text-sm font-semibold text-gray-500">
-            <i className="fa-solid fa-circle"></i> OBSOLETES
+            <i className="fa-solid fa-circle text-xs text-red-500"></i> OBSOLETES
           </p>
         </div>
         <div className=" flex flex-col justify-center items-start">
