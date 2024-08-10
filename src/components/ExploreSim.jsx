@@ -23,7 +23,7 @@ const ExploreSim = () => {
 
         {/* Middle Section with Background Image */}
         <div
-          className="relative h-screen bg-cover bg-center"
+          className="relative w-screen h-screen bg-cover bg-center"
           style={{ backgroundImage: `url(${backgroundImage})` }}
         >
           <button className="px-8 py-4 w-[340px] border-2 border-red-700 bg-white hover:bg-slate-200 text-gray-600 rounded-full flex items-center justify-between space-x-1 absolute bottom-[123px] right-[161px]">
@@ -37,8 +37,8 @@ const ExploreSim = () => {
         {/* Bottom Section */}
         <div className="flex items-center justify-evenly bg-white p-8 pt-0">
           <button className="px-8 py-3 border-2 border-red-700 bg-red-500 text-white rounded-full flex items-center space-x-2">
-          <span>
-          <i class="fa-solid fa-cube"></i>
+            <span>
+              <i class="fa-solid fa-cube"></i>
             </span>
             <span>EXPLORE SIMULATION</span>
           </button>

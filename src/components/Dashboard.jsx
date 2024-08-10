@@ -41,9 +41,9 @@ const Dashboard = () => {
     <div className="min-h-screen pb-20 bg-gray-50 p-4 px-14 relative">
       <div className="absolute left-1/2 transform top-10 h-[680px] w-[3px] bg-red-500"></div>
       {/* <div className="absolute left-1/3 transform -translate-x-1/3 top-10 w-1/4 h-[2px] bg-red-500"></div> */}
-      <div className="absolute left-1/3 transform top-10 w-60 h-[2px] bg-red-500"></div>
-      <div className="absolute left-1/3 transform -translate-x-1/3 top-7 text-red-500 ">
-        <i class="fa-solid fa-caret-left"></i>
+      <div className="absolute left-1/2 transform -translate-x-full top-10 w-60 h-[2px] bg-red-500"></div>
+      <div className="absolute left-1/2 transform -translate-x-60  top-7 text-red-500 ">
+        <i class="fa-solid fa-caret-left text-xl"></i>
       </div>
       <div className="absolute left-1/2 transform -translate-x-1/2  top-[730px] w-2 h-2 rounded-full border-2 border-red-500 "></div>
       <div className="absolute left-1/2 transform -translate-x-1/2 top-[750px] w-3 h-3 rounded-full border-2 border-red-500 "></div>
