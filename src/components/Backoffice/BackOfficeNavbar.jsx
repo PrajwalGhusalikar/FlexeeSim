@@ -6,7 +6,7 @@ const BackOfficeNavbar = () => {
       <div className="w-full fixed z-40  top-0 left-0  ">
         <div className="flex justify-between items-center  bg-gray-900 text-white p-0">
           <div className="w-72 left-0">
-            <h1 className="text-2xl p-2 bg-[#383838] font-bold">FLEXEE</h1>
+            <h1 className="text-2xl p-2 bg-[#383838] text-start font-bold pl-4">FLEXEE</h1>
           </div>
           <div className="flex justify-between w-full">
             <div className="px-3">

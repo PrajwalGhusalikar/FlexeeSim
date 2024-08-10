@@ -43,7 +43,7 @@ const BackOfficeSidebar = () => {
             </Link>
           </li>
 
-          <hr />
+          <hr className=" opacity-40" />
           <li className="mb-4">
             <h2 className="text-lg font-semibold mb-2 text-blue-500 mt-2">
               REPORTS
@@ -83,7 +83,7 @@ const BackOfficeSidebar = () => {
               </li>
             </ul>
           </li>
-          <hr />
+          <hr className=" opacity-40"/>
           <li className="mb-4">
             <h2 className="text-lg font-semibold mb-2 mt-2 text-blue-500">
               QUESTIONNAIRE
@@ -111,7 +111,7 @@ const BackOfficeSidebar = () => {
               </li>
             </ul>
           </li>
-          <hr />
+          <hr className=" opacity-40" />
 
           <li className="mb-4">
             <h2 className="text-lg font-semibold mb-2 mt-2 text-blue-500">

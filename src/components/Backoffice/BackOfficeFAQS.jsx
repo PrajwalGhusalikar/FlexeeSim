@@ -28,6 +28,18 @@ const faqData = [
       convallis efficitur lorem, at facilisis risus aliquam non. Duis
       ullamcorper maximus dolor id convallis.`,
   },
+  {
+    question: "Aliquam quis ipsum eu odio vestibulum consequat id non nibh.",
+    answer: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+      convallis efficitur lorem, at facilisis risus aliquam non. Duis
+      ullamcorper maximus dolor id convallis.`,
+  },
+  {
+    question: "Aliquam quis ipsum eu odio vestibulum consequat id non nibh.",
+    answer: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+      convallis efficitur lorem, at facilisis risus aliquam non. Duis
+      ullamcorper maximus dolor id convallis.`,
+  },
   // Add more FAQs as needed
 ];
 

@@ -27,10 +27,34 @@ const Navbar = () => {
             Dashboard
           </Link>
           <Link
+            to="/dashboard/courses"
+            className="text-gray-500 hover:text-red-500 hover:underline underline-offset-4 decoration-red-600 cursor-pointer"
+          >
+            Dashboard Courses
+          </Link>
+          <Link
             to="/backoffice"
             className="text-gray-500 hover:text-red-500 hover:underline underline-offset-4 decoration-red-600 cursor-pointer"
           >
             Backoffice
+          </Link>
+          <Link
+            to="/backoffice/user"
+            className="text-gray-500 hover:text-red-500 hover:underline underline-offset-4 decoration-red-600 cursor-pointer"
+          >
+            Backoffice User
+          </Link>
+          <Link
+            to="/backoffice/reports"
+            className="text-gray-500 hover:text-red-500 hover:underline underline-offset-4 decoration-red-600 cursor-pointer"
+          >
+            Backoffice Reports
+          </Link>
+          <Link
+            to="/backoffice/faqs"
+            className="text-gray-500 hover:text-red-500 hover:underline underline-offset-4 decoration-red-600 cursor-pointer"
+          >
+            Backoffice FAQS
           </Link>
           <Link
             to="/aboutus"
