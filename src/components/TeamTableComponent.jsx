@@ -29,13 +29,13 @@ const TeamTableComponent = () => {
       validity: "1 Year",
       image: "https://randomuser.me/api/portraits/women/4.jpg",
     },
-    {
-      name: "Charlotte",
-      id: "23354824",
-      amount: "$968",
-      validity: "1 Year",
-      image: "https://randomuser.me/api/portraits/women/5.jpg",
-    },
+    // {
+    //   name: "Charlotte",
+    //   id: "23354824",
+    //   amount: "$968",
+    //   validity: "1 Year",
+    //   image: "https://randomuser.me/api/portraits/women/5.jpg",
+    // },
   ];
 
   return (
@@ -52,18 +52,18 @@ const TeamTableComponent = () => {
           <div className="flex justify-between items-center mb-4">
             <div className="flex flex-col items-start ">
               <div className="flex space-x-2 items-center">
-                <div className="bg-yellow-500 h-4 w-4 rounded-full "></div>
-                <div className="text-sm">Email Sent</div>
+                <div className="bg-yellow-500 h-2 w-2 rounded-full "></div>
+                <div className="text-xs">Email Sent</div>
               </div>
               <div className="flex space-x-2 items-center">
                 {" "}
-                <div className="bg-blue-500 h-4 w-4 rounded-full "></div>
-                <div className="text-sm">Read</div>
+                <div className="bg-blue-500 h-2 w-2 rounded-full "></div>
+                <div className="text-xs">Read</div>
               </div>
               <div className="flex space-x-2 items-center">
                 {" "}
-                <div className="bg-red-500 h-4 w-4 rounded-full "></div>
-                <div className="text-sm">Unread</div>
+                <div className="bg-red-500 h-2 w-2 rounded-full "></div>
+                <div className="text-xs">Unread</div>
               </div>
             </div>
           </div>
@@ -71,10 +71,40 @@ const TeamTableComponent = () => {
         <div className="h-96 overflow-y-scroll">
           <table className="min-w-full bg-white">
             <thead>
-              <tr>
-                <th className="py-2 px-4 text-left">Name</th>
-                <th className="py-2 px-4 text-left">Received Amount</th>
-                <th className="py-2 px-4 text-left">Validity</th>
+              <tr className="">
+                <th className="py-2 px-4 text-left">
+                  {" "}
+                  {/* arrow starts */}
+                  <div className="flex justify-start h-8 items-center relative">
+                    <p className="bg-red-500 h-0.5 w-32 "></p>
+                    <div className="absolute left-32 transform  -translate-x-2 text-red-500 ">
+                      <i class="fa-solid fa-caret-right text-xl"></i>
+                    </div>
+                  </div>
+                  {/* arrow ends */}
+                </th>
+                <th className="py-2 px-4 text-left">
+                  {" "}
+                  {/* arrow starts */}
+                  <div className="flex justify-start h-8 items-center relative">
+                    <p className="bg-gray-500 h-0.5 w-24 "></p>
+                    <div className="absolute left-24 transform  -translate-x-2 text-gray-500 ">
+                      <i class="fa-solid fa-caret-right text-xl"></i>
+                    </div>
+                  </div>
+                  {/* arrow ends */}
+                </th>
+                <th className="py-2 px-4 text-left">
+                  {" "}
+                  {/* arrow starts */}
+                  <div className="flex justify-start h-8 items-center relative">
+                    <p className="bg-red-500 h-0.5 w-14 "></p>
+                    <div className="absolute left-14 transform  -translate-x-2 text-red-500 ">
+                      <i class="fa-solid fa-caret-right text-xl"></i>
+                    </div>
+                  </div>
+                  {/* arrow ends */}
+                </th>
                 <th className="py-2 px-4 text-center">-</th>
               </tr>
             </thead>
@@ -87,16 +117,24 @@ const TeamTableComponent = () => {
                       alt={member.name}
                       className="w-12 h-12 rounded-full mr-4"
                     />
-                    <div>
+                    <div className="text-start">
                       <div className="text-lg font-bold">{member.name}</div>
-                      <div className="text-sm text-gray-500">#{member.id}</div>
+                      <div className="text-sm text-red-500">#{member.id}</div>
                     </div>
                   </td>
-                  <td className="py-4 px-4 text-green-500 ">
-                    <span className="mr-2">{member.amount}</span>
+                  <td className="py-4 px-4 text-green-500 text-start ">
+                    <span className="mr-2">
+                      {" "}
+                      <p className="text-sm text-black">Received Amount</p>
+                      {member.amount}
+                    </span>
                     <i className="fa-solid fa-check-circle"></i>
                   </td>
-                  <td className="py-4 px-4 text-gray-500">{member.validity}</td>
+                  <td className="py-4 px-4 text-green-500">
+                    {" "}
+                    <p className="text-sm text-black">Validity</p>
+                    {member.validity}
+                  </td>
                   <td className="py-4 px-4  text-xl text-blue-400 hover:text-blue-500 cursor-pointer">
                     <i class="fa-solid fa-circle-chevron-right"></i>
                   </td>

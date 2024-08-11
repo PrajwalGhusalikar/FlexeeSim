@@ -38,7 +38,7 @@ const Dashboard = () => {
   };
 
   return (
-    <div className="min-h-screen pb-20 bg-gray-50 p-4 px-14 relative">
+    <div className="min-h-screen pb-12 bg-gray-50 p-4 px-14 relative">
       <div className="absolute left-1/2 transform top-10 h-[680px] w-[3px] bg-red-500"></div>
       {/* <div className="absolute left-1/3 transform -translate-x-1/3 top-10 w-1/4 h-[2px] bg-red-500"></div> */}
       <div className="absolute left-1/2 transform -translate-x-full top-10 w-60 h-[2px] bg-red-500"></div>
@@ -80,7 +80,7 @@ const Dashboard = () => {
             <div
               key={index}
               onClick={() => handleSelectedCourse(course)}
-              className="bg-gray-100 h-64 cursor-pointer text-start p-4 px-8 rounded-md relative shadow-sm border border-gray-500 border-opacity-20 group"
+              className="bg-[#F5F5F5] h-64 cursor-pointer text-start p-4 px-8 rounded-md relative shadow-sm border border-gray-500 border-opacity-20 group"
             >
               <div>
                 <div className="text-2xl font-semibold">ORGANIZATION:</div>

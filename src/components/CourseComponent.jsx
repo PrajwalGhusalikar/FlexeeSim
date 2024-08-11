@@ -5,20 +5,19 @@ const CourseComponent = () => {
   const SelectedCourse = JSON.parse(localStorage.getItem("SelectedCourse"));
   return (
     <div className="bg-white p-8 px-16 w-full mx-auto">
-      <header className=" flex justify-between pb-3 border-0 border-b-2 border-gray-300 mb-9">
+      <header className=" flex justify-between pb-3  ">
         <div className="">
           <div className="flex justify-start space-x-4 items-center mb-4">
             <p className=" h-6 w-6 flex justify-center items-center rounded-full border border-red-500 border-spacing-2">
               <i class="fa-solid fa-circle-check"></i>
             </p>
-
             <div className=" font-normal text-3xl">COURSE</div>
             <div className="mx-2">|</div>
             <div className="text-gray-900 text-xl">
               SESSION NUMBER: <span className="text-red-600">8713</span>
             </div>
           </div>
-          <div className="text-gray-600 text-start mb-6">
+          <div className="text-gray-800 text-start mb-6">
             <p className="font-semibold text-xl mb-2">
               {SelectedCourse?.course}
             </p>
@@ -33,9 +32,9 @@ const CourseComponent = () => {
         <div className="text-start">
           <h2 className="text-6xl font-medium">
             yZFU-RY9q{" "}
-            <span className=" font-thin">
+            <span className=" font-extralight">
               {" "}
-              <i class="fa-solid fa-share-nodes"></i>
+              <i class="fa-solid fa-share-nodes fa-xs"></i>
             </span>
           </h2>
           <h3 className="text-xl my-3 pl-20 cursor-pointer text-red-500">
@@ -43,6 +42,10 @@ const CourseComponent = () => {
           </h3>
         </div>
       </header>
+      <div className="flex items-center w-full mb-8">
+        <div className="h-0.5 w-44 bg-red-500"></div>
+        <div className="h-0.5 w-full ml-4 bg-gray-300"></div>
+      </div>
 
       <div className="grid grid-cols-5 place-content-end  gap-0  justify-between items-end ">
         <div className="space-y-2 col-span-3 text-start   pb-8">
@@ -56,8 +59,8 @@ const CourseComponent = () => {
           </div>
           <p className="text-gray-500 opacity-60 text-3xl">59 DAYS REMAINING</p>
         </div>
-        <div className="  col-span-2  text-white  text-center cursor-pointer flex justify-center items-center p-3 border-0 border-l-2 border-b-0 border-gray-400 border-opacity-50  ">
-          <img src={deploytosim} alt="" className="w-[600px]" />
+        <div className="  col-span-2  text-white  text-center cursor-pointer flex justify-center items-center p-10 border-0 border-l-2 border-b-0 border-gray-400 border-opacity-50  ">
+          <img src={deploytosim} alt="" className="w-[450px]" />
         </div>
       </div>
 
@@ -84,7 +87,7 @@ const CourseComponent = () => {
                 checked
                 readOnly
               />
-              <label  className="text-xl font-semibold text-red-400 p-1">VIKRAM SETHI (YOU)</label>
+              <label  className="text-xl font-semibold text-[#ED1C24] p-1">VIKRAM SETHI (YOU)</label>
             </div>
           </div>
         </div>

@@ -81,17 +81,17 @@ const BackOfficeUser = () => {
                   </div>
                 </td>
                 <td className="py-2 px-4 border-b">
-                  <span className="text-gray-500">{user.email}</span>
+                  <span className="text-gray-800">{user.email}</span>
                   <br />
                   <span className="text-xs text-gray-400">
                     {user.email.split("@")[1]}
                   </span>
                 </td>
                 <td className="py-2 px-4 border-b">
-                  <span className="text-gray-500">{user.opinion}</span>
+                  <span className="text-gray-800">{user.opinion}</span>
                 </td>
                 <td className="py-2 px-4 border-b w-52">
-                  <span className="text-gray-500">{user.team}</span>
+                  <span className="text-gray-900">{user.team}</span>
                 </td>
                 <td className="py-2 px-4 border-b">
                   <i className="fa-solid fa-arrow-up-right-from-square"></i>

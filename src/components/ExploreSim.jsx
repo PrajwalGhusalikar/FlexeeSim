@@ -1,6 +1,7 @@
 import React from "react";
-import backgroundImage from "../Assets/ExploreSim.png"; // Update with your actual image path
+import BackOfficeImg from "../Assets/BackOfficeBgImg.png"; // Update with your actual image path
 import backgroundImage2 from "../Assets/ExploreSim2.png";
+
 const ExploreSim = () => {
   return (
     <div className="relative min-h-screen bg-gray-100">
@@ -16,7 +17,7 @@ const ExploreSim = () => {
             <br />
             You are also able to monitor the performance of your teams.
           </p>
-          <button className="mt-6 px-8 py-3 border-2 border-red-700 bg-red-500 text-white rounded-full">
+          <button className="mt-6 px-8 py-3 border-2 border-[#AC090F] bg-[#ED1C24] text-white rounded-full">
             CONNECT NOW
           </button>
         </div>
@@ -24,21 +25,34 @@ const ExploreSim = () => {
         {/* Middle Section with Background Image */}
         <div
           className="relative w-screen h-screen bg-cover bg-center"
-          style={{ backgroundImage: `url(${backgroundImage})` }}
+          style={{ backgroundImage: `url(${BackOfficeImg})` }}
         >
-          <button className="px-8 py-4 w-[340px] border-2 border-red-700 bg-white hover:bg-slate-200 text-gray-600 rounded-full flex items-center justify-between space-x-1 absolute bottom-[123px] right-[161px]">
-            <span>
-              <i class="fa-solid fa-circle-question text-2xl"></i>
-            </span>
-            <span className=" text-2xl">TRAINER QUESTION</span>
-          </button>
+          <div className="w-[430px] text-start absolute bottom-[143px] right-[135px] z-20">
+            <div>
+              <h2 className="text-4xl text-black my-1 font-semibold">
+                THE FRESH CONNECTION
+              </h2>
+              <h2 className="text-3xl text-black my-1 font-semibold">
+                ONLINE TRAIN THE TRAINER
+              </h2>
+            </div>
+            <div className="my-3 text-white text-lg w-96 mb-5">
+              WELCOME TO THE ONLINE TRAIN THE TRAINER FOR THE FRESH CONNECTION.
+            </div>
+            <button className="px-6 py-4 w-[340px] border-2 border-red-700 bg-white hover:bg-slate-200 text-gray-600 rounded-full flex items-center justify-between space-x-1">
+              <span>
+                <i className="fa-solid fa-circle-question text-2xl"></i>
+              </span>
+              <span className="text-2xl">TRAINER QUESTION</span>
+            </button>
+          </div>
         </div>
 
         {/* Bottom Section */}
-        <div className="flex items-center justify-evenly bg-white p-8 pt-0">
-          <button className="px-8 py-3 border-2 border-red-700 bg-red-500 text-white rounded-full flex items-center space-x-2">
+        <div className="flex items-center justify-start bg-white p-8 pt-0">
+          <button className="px-8 mx-7 mr-36 py-3 border-2 border-red-700 bg-red-500 text-white rounded-full flex items-center space-x-2">
             <span>
-              <i class="fa-solid fa-cube"></i>
+              <i className="fa-solid fa-cube"></i>
             </span>
             <span>EXPLORE SIMULATION</span>
           </button>

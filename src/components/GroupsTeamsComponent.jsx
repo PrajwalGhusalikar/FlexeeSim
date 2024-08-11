@@ -63,7 +63,20 @@ const GroupsTeamsComponent = () => {
       <div className="grid grid-cols-5 justify-start items-start mb-6 ">
         <div className="w-full h-full p-10 col-span-3 border-2  border-t-2 rounded-s-md   border-gray-400 border-opacity-50">
           <header className="flex justify-between items-center mb-4">
-            <div className="text-2xl font-bold">GROUPS</div>
+            <div className="text-2xl font-bold">
+              {" "}
+              <p className="">GROUPS</p>{" "}
+              {/* arrow starts */}
+              <div className="flex justify-center h-8 items-center relative">
+                <p className="bg-red-500 h-0.5 w-24 "></p>
+                <p className="text-red-500 ">
+                  <div className="absolute left-24 transform -translate-y-[18px] -translate-x-2 text-red-500 ">
+                    <i class="fa-solid fa-caret-right text-xl"></i>
+                  </div>
+                </p>
+              </div>
+              {/* arrow ends */}
+            </div>
           </header>
           <div className="bg-gray-50 flex w-full justify-between p-4 rounded mb-4">
             {/* Placeholder for the graph */}
@@ -83,28 +96,41 @@ const GroupsTeamsComponent = () => {
             {teams.map((team, index) => (
               <div
                 key={index}
-                className="flex justify-between items-center border-b-2 border-gray-200 py-2 group hover:border-b-red-500 border-opacity-20"
+                className="flex justify-between space-x-24 items-center border-b-2 border-gray-200 py-2 group hover:border-b-red-500 border-opacity-20"
               >
-                <div className="text-lg">{team.name}</div>
-                <div
-                  className={`text-red-500 ${
-                    team.members.length === 0
-                      ? "text-gray-500 flex flex-col justify-start"
-                      : ""
-                  }`}
-                >
-                  Member{" "}
-                  {team.members.length > 0
-                    ? `Joined ${team.members.length}`
-                    : "Not Added Yet"}
+                <div className="flex space-x-28">
+                  <div className="text-lg">{team.name}</div>
+                  <div
+                    className={` ${
+                      team.members.length === 0 &&
+                      "text-gray-500  w-60  text-start"
+                    }`}
+                  >
+                    {team.members.length > 0 ? (
+                      <p className="text-black text-start">
+                        {" "}
+                        Member Joined{" "}
+                        <span className="text-red-500">
+                          {" "}
+                          0{team.members.length}
+                        </span>
+                      </p>
+                    ) : (
+                      <p className="text-start">Not Added Yet</p>
+                    )}
+                  </div>{" "}
                 </div>
                 {team.members.length > 0 ? (
                   <div className="text-red-500 cursor-pointer opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <span><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+                    <span>
+                      <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </span>
                   </div>
                 ) : (
                   <div className="text-red-500 disabled cursor-pointer opacity-0 group-hover:opacity-100 transition-opacity duration-300 ">
-                    <span><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+                    <span>
+                      <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </span>
                   </div>
                 )}
               </div>

@@ -6,7 +6,9 @@ const BackOfficeNavbar = () => {
       <div className="w-full fixed z-40  top-0 left-0  ">
         <div className="flex justify-between items-center  bg-gray-900 text-white p-0">
           <div className="w-72 left-0">
-            <h1 className="text-2xl p-2 bg-[#383838] text-start font-bold pl-4">FLEXEE</h1>
+            <h1 className="text-2xl p-2 bg-[#383838] text-start font-bold pl-4">
+              FLEXEE
+            </h1>
           </div>
           <div className="flex justify-between w-full">
             <div className="px-3">
@@ -45,15 +47,15 @@ const BackOfficeNavbar = () => {
             {/* There is not proper alignments  */}
             <div className=" w-60 h-10 "></div>
             <div className=" w-full text-start  ">
-              <div className="text-xl flex text-start font-bold w-full py-1 bg-white  ">
-                <h1 className="w-72 text-right font-medium bg-slate-200 pr-10 mr-1 pl-0 p-1">
+              <div className="text-xl flex text-start items-start justify-between font-bold w-full  bg-white  ">
+                <h1 className="w-72 text-right font-medium bg-slate-200 pr-10  pl-0 p-3 border">
                   SELECT A POOL{" "}
                 </h1>
-                <div className="relative w-full">
+                <div className="relative w-full py-0">
                   <select
                     name=""
                     id=""
-                    className="px-3 w-full p-1 border-0 border-b-2 border-l-2 font-normal appearance-none pl-10"
+                    className="px-3 w-full p-3 border-gray-300 border-0 border-b-2 border-l-2 font-normal appearance-none pl-10"
                   >
                     <option value="">
                       {" "}
@@ -62,7 +64,7 @@ const BackOfficeNavbar = () => {
                     </option>
                   </select>
                   <div className="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
-                    <div className="bg-gray-200  border-4 p-1 border-l-red-500 w-14 flex justify-center items-center h-8 absolute right-0 top-0">
+                    <div className="bg-gray-200  border-0  border-l-2  border-l-red-500 w-24 flex justify-center items-center h-12 absolute right-0 top-1">
                       <i class="fa-solid fa-chevron-down"></i>
                     </div>
                   </div>
