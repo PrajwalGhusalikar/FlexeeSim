@@ -52,7 +52,7 @@ const Dashboard = () => {
       <section className="grid grid-cols-2 items-center relative gap-10">
         <div className="text-start">
           <h2 className="text-3xl font-bold mb-4">THE FRESH CONNECTION</h2>
-          <h3 className="text-xl mb-4 font-semibold">4 ACTIVE COURSES</h3>
+          <h3 className="text-2xl mb-4 font-semibold">4 ACTIVE COURSES</h3>
         </div>
         <div className="p-2 rounded">
           <h2 className="text-3xl font-bold mb-4 text-start">CODE ENTRY</h2>
@@ -83,25 +83,25 @@ const Dashboard = () => {
               className="bg-[#F5F5F5] h-64 cursor-pointer text-start p-4 px-8 rounded-md relative shadow-sm border border-gray-500 border-opacity-20 group"
             >
               <div>
-                <div className="text-2xl font-semibold">ORGANIZATION:</div>
+                <div className="text-2xl font-medium">ORGANIZATION:</div>
                 <div className="text-gray-700 text-xl mb-2">
                   {course.organization}
                 </div>
-                <div className="text-2xl font-semibold">COURSE:</div>
+                <div className="text-2xl font-medium">COURSE:</div>
                 <div className="text-gray-700 mb-2  text-xl">
                   {course.course}
                 </div>
-                <div className="text-2xl font-semibold">MEMBERS:</div>
+                <div className="text-2xl font-medium">MEMBERS:</div>
                 <div className="text-gray-700  text-xl">
                   TOTAL NUMBER OF STUDENTS - {course.members}
                 </div>
               </div>
-              <div className="text-red-500 flex items-start space-x-2 text-right absolute top-5 right-5 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <div className="text-[#ED1C24] flex items-start space-x-2 text-right absolute top-5 right-5 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <span>
                   <i className="fa-regular fa-circle-dot px-1 text-xs"></i>
                   Explore Team/Members{" "}
                 </span>
-                <span className="text-4xl">
+                <span className="text-5xl">
                   {" "}
                   <i className="fa-solid fa-arrow-up-right-from-square py-4"></i>
                 </span>

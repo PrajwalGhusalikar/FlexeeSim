@@ -7,11 +7,11 @@ const DashboardNavbar = () => {
   const navigate = useNavigate();
   return (
     <div className=" w-full fixed top-0 z-40 ">
-      <div className="flex w-full items-center justify-start bg-white p-4 pb-0 border-b-2 border-gray-200">
+      <div className="flex w-full items-center justify-start bg-white p-1 pb-0 border-b-0 border-gray-200">
         <div className="flex items-center ">
           <div className="text-red-600 text-4xl font-bold border border-b-red-500 border-r-red-500 border-l-0 border-t-0">
             {/* <i className="fa-solid fa-th-large"></i> Logo */}
-            <img src={grid_img} alt="" className="h-36 w-36" />
+            <img src={grid_img} alt="" className="h-40 w-44" />
           </div>
         </div>
         <div className="w-full">
@@ -22,14 +22,14 @@ const DashboardNavbar = () => {
             </div>
             <div className="">
               {" "}
-              <span className="mx-2 text-xl font-medium">Welcome Vikram</span>
+              <span className="mx-2 text-2xl font-medium">Welcome Vikram</span>
             </div>
             <div className="ml-4 flex items-center text-gray-500 cursor-pointer text-xl ">
               <i className="fa-solid fa-user-circle text-red-600"></i>
-              <span className="ml-2 text-xl font-medium">My Profile</span>
+              <span className="ml-2 text-2xl font-medium">My Profile</span>
             </div>
             <div className="ml-4 px-4 cursor-pointer">
-              <i className="fa-solid fa-bars text-red-500 text-xl"></i>
+              <i className="fa-solid fa-bars text-red-500 text-2xl"></i>
             </div>
             <div className="ml-4 border cursor-pointer border-b-red-300 h-24 w-24 bg-[#E1DEDE] flex items-center justify-center">
               {/* <i className="fa-solid fa-sign-out-alt text-red-600 text-4xl"></i> */}
@@ -38,7 +38,7 @@ const DashboardNavbar = () => {
           </div>{" "}
           <div className=" bg-[#ECECEC] p-3 px-5 flex justify-between items-center text-gray-500">
             <div className=" flex items-center">
-              <i className="fa-solid fa-home text-red-600"></i>
+              <i className="fa-solid fa-home text-red-600 px-2"></i>
               <span
                 onClick={() => navigate("/dashboard")}
                 className="ml-2 cursor-pointer"
@@ -56,7 +56,7 @@ const DashboardNavbar = () => {
                 )}
               </div>
             </div>
-            <div className="text-xl text-red-500">
+            <div className="text-xl text-red-500 px-2">
               <svg
                 class="h-8 w-8 text-red-500"
                 width="24"

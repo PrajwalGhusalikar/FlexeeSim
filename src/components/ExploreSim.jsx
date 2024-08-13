@@ -8,11 +8,11 @@ const ExploreSim = () => {
       <div className="relative h-full">
         {/* Top Section */}
         <div className="text-center p-8 bg-white">
-          <h1 className="text-4xl font-semibold">BACKOFFICE</h1>
-          <h2 className="text-2xl font-normal mt-2">
+          <h1 className="text-[40px] font-semibold">BACKOFFICE</h1>
+          <h2 className="text-[32px] font-normal mt-0">
             THE FRESH CONNECTION BACKOFFICE
           </h2>
-          <p className="text-gray-700 mt-4">
+          <p className="text-gray-700 text-[24px] mt-2">
             Here you can manage the simulation and execute calculations.
             <br />
             You are also able to monitor the performance of your teams.

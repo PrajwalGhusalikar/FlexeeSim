@@ -60,8 +60,8 @@ const GroupsTeamsComponent = () => {
 
   return (
     <div className="bg-white grid px-16 mx-auto">
-      <div className="grid grid-cols-5 justify-start items-start mb-6 ">
-        <div className="w-full h-full p-10 col-span-3 border-2  border-t-2 rounded-s-md   border-gray-400 border-opacity-50">
+      <div className="grid grid-cols-7 justify-start items-start mb-6 ">
+        <div className="w-full h-full p-10 col-span-4 border-2  border-t-2 rounded-s-md   border-gray-400 border-opacity-50">
           <header className="flex justify-between items-center mb-4">
             <div className="text-2xl font-bold">
               {" "}
@@ -78,10 +78,10 @@ const GroupsTeamsComponent = () => {
               {/* arrow ends */}
             </div>
           </header>
-          <div className="bg-gray-50 flex w-full justify-between p-4 rounded mb-4">
+          <div className="bg-gray-50 flex w-full justify-between items-start  rounded ">
             {/* Placeholder for the graph */}
-            <div className="h-32 bg-gray-300 w-96 flex items-center justify-center">
-              <img src={graph} alt="" className="h-full w-full" />
+            <div className="   w-[430px]   flex items-center justify-center">
+              <img src={graph} alt="" className="h-[110px] w-[412px] mt-10" />
             </div>
             <button className="bg-red-500 h-10 rounded-full flex space-x-1 justify-center items-center text-white px-4 py-2 ">
               <p>
@@ -98,7 +98,7 @@ const GroupsTeamsComponent = () => {
                 key={index}
                 className="flex justify-between space-x-24 items-center border-b-2 border-gray-200 py-2 group hover:border-b-red-500 border-opacity-20"
               >
-                <div className="flex space-x-28">
+                <div className="flex space-x-28 border-0">
                   <div className="text-lg">{team.name}</div>
                   <div
                     className={` ${
@@ -110,7 +110,7 @@ const GroupsTeamsComponent = () => {
                       <p className="text-black text-start">
                         {" "}
                         Member Joined{" "}
-                        <span className="text-red-500">
+                        <span className="text-red-500 font-medium">
                           {" "}
                           0{team.members.length}
                         </span>
@@ -137,7 +137,7 @@ const GroupsTeamsComponent = () => {
             ))}
           </div>
         </div>
-        <div className=" col-span-2 border-0 border-t-2 border-b-2 border-r-2  rounded-e-md    border-gray-400 border-opacity-50 h-full">
+        <div className=" col-span-3 border-0 border-t-2 border-b-2 border-r-2  rounded-e-md    border-gray-400 border-opacity-50 h-full">
           <TeamTableComponent />
         </div>
       </div>

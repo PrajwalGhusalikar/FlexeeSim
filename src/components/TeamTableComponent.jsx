@@ -1,4 +1,5 @@
 import React from "react";
+import Piechartimg from "../Assets/Group.png";
 const TeamTableComponent = () => {
   const teamMembers = [
     {
@@ -50,6 +51,9 @@ const TeamTableComponent = () => {
             </div>
           </div>
           <div className="flex justify-between items-center mb-4">
+            <div className=" m-1 bg-blue-950 mx-3 rounded-full ">
+              <img src={Piechartimg} alt="" />
+            </div>
             <div className="flex flex-col items-start ">
               <div className="flex space-x-2 items-center">
                 <div className="bg-yellow-500 h-2 w-2 rounded-full "></div>
@@ -72,10 +76,10 @@ const TeamTableComponent = () => {
           <table className="min-w-full bg-white">
             <thead>
               <tr className="">
-                <th className="py-2 px-4 text-left">
+                <th className=" px-4 text-left">
                   {" "}
                   {/* arrow starts */}
-                  <div className="flex justify-start h-8 items-center relative">
+                  <div className="flex justify-start h-3 items-center relative">
                     <p className="bg-red-500 h-0.5 w-32 "></p>
                     <div className="absolute left-32 transform  -translate-x-2 text-red-500 ">
                       <i class="fa-solid fa-caret-right text-xl"></i>
@@ -83,10 +87,10 @@ const TeamTableComponent = () => {
                   </div>
                   {/* arrow ends */}
                 </th>
-                <th className="py-2 px-4 text-left">
+                <th className=" px-4 text-left">
                   {" "}
                   {/* arrow starts */}
-                  <div className="flex justify-start h-8 items-center relative">
+                  <div className="flex justify-start h-3 items-center relative">
                     <p className="bg-gray-500 h-0.5 w-24 "></p>
                     <div className="absolute left-24 transform  -translate-x-2 text-gray-500 ">
                       <i class="fa-solid fa-caret-right text-xl"></i>
@@ -94,10 +98,10 @@ const TeamTableComponent = () => {
                   </div>
                   {/* arrow ends */}
                 </th>
-                <th className="py-2 px-4 text-left">
+                <th className=" px-4 text-left">
                   {" "}
                   {/* arrow starts */}
-                  <div className="flex justify-start h-8 items-center relative">
+                  <div className="flex justify-start h-3 items-center relative">
                     <p className="bg-red-500 h-0.5 w-14 "></p>
                     <div className="absolute left-14 transform  -translate-x-2 text-red-500 ">
                       <i class="fa-solid fa-caret-right text-xl"></i>
@@ -105,7 +109,7 @@ const TeamTableComponent = () => {
                   </div>
                   {/* arrow ends */}
                 </th>
-                <th className="py-2 px-4 text-center">-</th>
+                <th className=" px-4 text-center">-</th>
               </tr>
             </thead>
             <tbody>
@@ -118,7 +122,7 @@ const TeamTableComponent = () => {
                       className="w-12 h-12 rounded-full mr-4"
                     />
                     <div className="text-start">
-                      <div className="text-lg font-bold">{member.name}</div>
+                      <div className="text-sm font-normal">{member.name}</div>
                       <div className="text-sm text-red-500">#{member.id}</div>
                     </div>
                   </td>
@@ -128,7 +132,7 @@ const TeamTableComponent = () => {
                       <p className="text-sm text-black">Received Amount</p>
                       {member.amount}
                     </span>
-                    <i className="fa-solid fa-check-circle"></i>
+                    <i className="fa-regular fa-check-circle"></i>
                   </td>
                   <td className="py-4 px-4 text-green-500">
                     {" "}
@@ -136,7 +140,24 @@ const TeamTableComponent = () => {
                     {member.validity}
                   </td>
                   <td className="py-4 px-4  text-xl text-blue-400 hover:text-blue-500 cursor-pointer">
-                    <i class="fa-solid fa-circle-chevron-right"></i>
+                    <svg
+                      class="h-8 w-8 text-sky-500"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      stroke-width="1"
+                      stroke="currentColor"
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      {" "}
+                      <path stroke="none" d="M0 0h24v24H0z" />{" "}
+                      <circle cx="12" cy="12" r="9" />{" "}
+                      <line x1="16" y1="12" x2="8" y2="12" />{" "}
+                      <line x1="16" y1="12" x2="12" y2="16" />{" "}
+                      <line x1="16" y1="12" x2="12" y2="8" />
+                    </svg>
                   </td>
                 </tr>
               ))}

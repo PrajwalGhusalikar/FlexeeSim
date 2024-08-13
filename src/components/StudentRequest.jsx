@@ -199,7 +199,7 @@ const StudentRequest = () => {
               </td>
               <td className="px-4 py-2 text-start">
                 <p>{student.contact}</p>
-                <p className="pl-10">
+                <p className="pl-9">
                 <i class="fa-solid fa-envelope"></i>
                 </p>
               </td>
