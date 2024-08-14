@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import "./App.css";
 import AboutUs from "./components/AboutUs";
@@ -25,8 +25,12 @@ import BackOfficeFooter from "./components/Backoffice/BackOfficeFooter";
 import BackOfficeRankings from "./components/Backoffice/BackOfficeRankings";
 import BackOfficeReports from "./components/Backoffice/BackOfficeReports";
 import BackOfficeFAQS from "./components/Backoffice/BackOfficeFAQS";
+import HomeFeatures from "./components/HomeFeatures";
+import Slider from "./components/Slider";
 
 function App() {
+  const [isSideBarOpen, setIsSideBarOpen] = useState(true);
+
   return (
     <div className="App">
       <Router>
@@ -39,6 +43,8 @@ function App() {
                 <Navbar />
                 <Home />
                 <FlexeeOverview />
+                <HomeFeatures />
+                <Slider />
                 <Testimonials />
                 <Values />
                 <DecisionPreview />
@@ -104,12 +110,26 @@ function App() {
             path="/backoffice/user"
             element={
               <div className="">
-                <BackOfficeNavbar />
-                <BackOfficeSidebar />
-                <div className="mt-28 ml-60">
-                  <BackOfficeUser />
+                <div className="flex justify-start items-start ">
+                  {isSideBarOpen && <BackOfficeSidebar />}
+
+                  <div
+                    className={`w-full ${isSideBarOpen ? "ml-60 " : "ml-0"}`}
+                  >
+                    <div className="pb-10">
+                      <BackOfficeNavbar
+                        setIsSideBarOpen={setIsSideBarOpen}
+                        isSideBarOpen={isSideBarOpen}
+                      />
+                    </div>
+                    <div className="pb-20">
+                      <BackOfficeUser />
+                    </div>
+                  </div>
                 </div>
-                <BackOfficeFooter />
+                <div className={`w-full  ${isSideBarOpen ? "ml-60 " : "ml-0"}`}>
+                  <BackOfficeFooter />
+                </div>
               </div>
             }
           />
@@ -118,12 +138,26 @@ function App() {
             path="/backoffice/rankings"
             element={
               <div className="">
-                <BackOfficeNavbar />
-                <BackOfficeSidebar />
-                <div className="mt-28 ml-60">
-                  <BackOfficeRankings />
+                <div className="flex justify-start items-start ">
+                  {isSideBarOpen && <BackOfficeSidebar />}
+
+                  <div
+                    className={`w-full ${isSideBarOpen ? "ml-60 " : "ml-0"}`}
+                  >
+                    <div className="pb-10">
+                      <BackOfficeNavbar
+                        setIsSideBarOpen={setIsSideBarOpen}
+                        isSideBarOpen={isSideBarOpen}
+                      />
+                    </div>
+                    <div className="pb-20">
+                      <BackOfficeRankings />
+                    </div>
+                  </div>
                 </div>
-                <BackOfficeFooter />
+                <div className={`w-full ${isSideBarOpen ? "ml-60 " : "ml-0"}`}>
+                  <BackOfficeFooter />
+                </div>
               </div>
             }
           />
@@ -132,12 +166,26 @@ function App() {
             path="/backoffice/reports"
             element={
               <div className="">
-                <BackOfficeNavbar />
-                <BackOfficeSidebar />
-                <div className="mt-28 ml-60">
-                  <BackOfficeReports />
+                <div className="flex justify-start items-start ">
+                  {isSideBarOpen && <BackOfficeSidebar />}
+
+                  <div
+                    className={`w-full ${isSideBarOpen ? "ml-60 " : "ml-0"}`}
+                  >
+                    <div className="pb-10">
+                      <BackOfficeNavbar
+                        setIsSideBarOpen={setIsSideBarOpen}
+                        isSideBarOpen={isSideBarOpen}
+                      />
+                    </div>
+                    <div className="pb-20">
+                      <BackOfficeReports />
+                    </div>
+                  </div>
                 </div>
-                <BackOfficeFooter />
+                <div className={`w-full ${isSideBarOpen ? "ml-60 " : "ml-0"}`}>
+                  <BackOfficeFooter />
+                </div>
               </div>
             }
           />
@@ -146,12 +194,26 @@ function App() {
             path="/backoffice/faqs"
             element={
               <div className="">
-                <BackOfficeNavbar />
-                <BackOfficeSidebar />
-                <div className="mt-28 ml-60">
-                  <BackOfficeFAQS />
+                <div className="flex justify-start items-start ">
+                  {isSideBarOpen && <BackOfficeSidebar />}
+
+                  <div
+                    className={`w-full ${isSideBarOpen ? "ml-60 " : "ml-0"}`}
+                  >
+                    <div className="pb-10">
+                      <BackOfficeNavbar
+                        setIsSideBarOpen={setIsSideBarOpen}
+                        isSideBarOpen={isSideBarOpen}
+                      />
+                    </div>
+                    <div className="pb-20">
+                      <BackOfficeFAQS />
+                    </div>
+                  </div>
                 </div>
-                <BackOfficeFooter />
+                <div className={`w-full ${isSideBarOpen ? "ml-60 " : "ml-0"}`}>
+                  <BackOfficeFooter />
+                </div>
               </div>
             }
           />

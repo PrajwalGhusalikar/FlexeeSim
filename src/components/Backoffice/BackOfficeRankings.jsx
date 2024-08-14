@@ -2,7 +2,7 @@ import React from "react";
 
 const BackOfficeRankings = () => {
   return (
-    <div className=" bg-gray-100 m-0 px-10 ">
+    <div className="  m-0 px-10 ">
       <div className=" w-full">
         <h3 className="text-2xl px-2 text-start font-semibold mb-4 border-0 border-b pb-3 border-b-gray-500 border-opacity-20">
           Round and weighted rankings

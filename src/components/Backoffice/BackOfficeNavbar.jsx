@@ -1,20 +1,21 @@
 import React from "react";
 
-const BackOfficeNavbar = () => {
+const BackOfficeNavbar = ({ isSideBarOpen, setIsSideBarOpen }) => {
+
+  const handleSidebarOpen = () => {
+    setIsSideBarOpen(!isSideBarOpen);
+    localStorage.setItem("isSideBarOpen", isSideBarOpen);
+  };
+
   return (
     <div className="">
-      <div className="w-full fixed z-40  top-0 left-0  ">
-        <div className="flex justify-between items-center  bg-gray-900 text-white p-0">
-          <div className="w-72 left-0">
-            <h1 className="text-2xl p-2 bg-[#383838] text-start font-bold pl-4">
-              FLEXEE
-            </h1>
-          </div>
+      <div className="w-full  top-0 left-0  ">
+        <div className="flex justify-between items-center  bg-black text-white p-2 h-12">
           <div className="flex justify-between w-full">
-            <div className="px-3">
+            <div className="px-3 cursor-pointer" onClick={handleSidebarOpen}>
               <i class="fa-solid fa-bars mr-2 px-3 text-2xl text-red-500"></i>
             </div>
-            <div className="flex items-center ">
+            <div className="flex items-center px-3 ">
               <svg
                 class="h-8 w-8 text-white "
                 width="24"
@@ -34,7 +35,7 @@ const BackOfficeNavbar = () => {
                 <rect x="14" y="14" width="6" height="6" rx="1" />
               </svg>
               <i className="fa-solid fa-bell mx-2 px-3 text-2xl"></i>
-              <p className="px-3 text-2xl">|</p>
+              <p className="px-3 text-2xl opacity-50">|</p>
               <a href="/" className="hover:text-gray-500">
                 Back To My Account
               </a>
@@ -44,11 +45,11 @@ const BackOfficeNavbar = () => {
         </div>
         <div className="">
           <div className="flex h-10">
-            {/* There is not proper alignments  */}
-            <div className=" w-60 h-10 "></div>
             <div className=" w-full text-start  ">
-              <div className="text-xl flex text-start items-start justify-between font-bold w-full  bg-white  ">
-                <h1 className="w-72 text-right font-medium bg-slate-200 pr-10  pl-0 p-3 border">
+              <div
+                className={`text-xl flex text-start items-start justify-between font-bold  bg-white  `}
+              >
+                <h1 className="w-[280px] text-right font-medium bg-slate-200 pr-10  pl-0 p-3 border">
                   SELECT A POOL{" "}
                 </h1>
                 <div className="relative w-full py-0">

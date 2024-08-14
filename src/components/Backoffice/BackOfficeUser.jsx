@@ -58,7 +58,10 @@ const BackOfficeUser = () => {
         <table className="w-full text-left border-collapse">
           <thead>
             <tr>
-              <th className="py-2 px-4 border-b">NAME / ID</th>
+              <th className="py-2 px-4 border-b">
+                NAME / ID{" "}
+                <i class="fa-solid fa-arrow-down-a-z text-red-500"></i>
+              </th>
               <th className="py-2 px-4 border-b">EMAIL / USERNAME</th>
               <th className="py-2 px-4 border-b">OPINION FOR</th>
               <th className="py-2 px-4 border-b">TEAM NAME</th>
@@ -103,11 +106,11 @@ const BackOfficeUser = () => {
         <div className="flex justify-between items-center mt-4">
           <div className="flex items-center">
             <p className="text-gray-800">Showing 1 to 10 Out Of 1065</p>
-            <button className=" flex items-center justify-between w-36 px-4 py-2 text-red-500 rounded ">
+            <button className=" flex items-center justify-between w-36 px-4 py-2  rounded ">
               <p className=" flex justify-center items-center w-7 h-7 border-opacity-50 border border-black rounded-full">
                 <FontAwesomeIcon icon={faDownload} className="" />
               </p>
-              <p>Download</p>
+              <p className=" font-medium text-[14px] text-red-500">Download</p>
             </button>
           </div>
           <button className="w-40 text-sm px-4 py-2 bg-red-500 rounded-full text-white  mt-4 hover:bg-gray-700">
